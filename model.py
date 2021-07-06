@@ -26,10 +26,10 @@ class Shape():
         self.fill_char = fill_char
 
     def draw_shape(self):
-        width = x_end - x_start
-        height = y_end - y_start
-        for row in range(self.height):
-            print(self.fill_char * self.width)
+        width = self.end_x - self.start_x
+        height = self.end_y - self.start_y
+        for row in range(height):
+            print(self.fill_char * width)
 
     # def change_fill_char(self, new_char): 
     #     self.fill_char = new_char
